@@ -1,0 +1,32 @@
+#登陆相关配置
+login:
+  #自定义部署的api服务器地址
+  api: "http://127.0.0.1:8086/wisedu-unified-login-api-v1.0/api/login"
+#管理人组配置
+users:
+  #单个管理人用户配置
+  - user:
+      #username 
+      username: 'xxxxxxxx'
+      #password 密码
+      password: 'xxxxxxxx'
+      #school 学校全称
+      school: 黑龙江大学                        
+#今日校园相关配置
+cpdaily:
+  #是否检查问题,true检查，false不检查
+  check: true
+  #附加信息组默认选项配置，没有可留空
+  defaults:
+  #附加信息组默认选项配置，按顺序，可留空
+     - default:
+         #表单项标题
+         title: title
+        #表单项默认值
+         value: value                     
+  #多个额外选项配置
+#    - default:
+#        #表单项标题
+#        title: 体温
+#        #表单项默认值
+#        value: 正常

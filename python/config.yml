@@ -1,0 +1,65 @@
+#登陆相关配置
+login:
+  #自定义部署的api服务器地址
+  api: "http://127.0.0.1:8086/wisedu-unified-login-api-v1.0/api/login"
+#用户组配置
+users:
+  #单个用户配置，以两个为例
+#   - user:
+#       #username 
+#       username: 'xxxxxxxx'
+#       #password 密码
+#       password: '*******'
+#       #address 地址，定位信息  中国河南省xx市xx区xx路
+#       address: xxxxxx
+#       #email 接受通知消息的邮箱，此功能暂时无效
+#       email: 1600845875@qq.com
+#       #school 学校全称
+#       school: 黑龙江大学
+#       #lon 经度，保留六位小数。例如 126.643287
+#       lon: 'xxx.xxxxxx'
+#       #lat 纬度，保留六位小数
+#       lat: 'xx.xxxxxx'
+#       #abnormalReason 反馈信息
+#       abnormalReason: 正常
+#   - user:
+#       #username 
+#       username: 'xxxxxxxx'
+#       #password 密码
+#       password: '*******'
+#       #address 地址，定位信息  中国河南省xx市xx区xx路
+#       address: xxxxxx
+#       #email 接受通知消息的邮箱，此功能暂时无效
+#       email: 1600845875@qq.com
+#       #school 学校全称
+#       school: 黑龙江大学
+#       #lon 经度，保留六位小数。例如 126.643287
+#       lon: 'xxx.xxxxxx'
+#       #lat 纬度，保留六位小数
+#       lat: 'xx.xxxxxx'
+#       #abnormalReason 反馈信息
+#       abnormalReason: 正常              
+#今日校园相关配置
+cpdaily:
+  #是否检查问题,true检查，false不检查
+  check: false
+  #附加信息组默认选项配置，没有可留空
+  defaults:
+  #附加信息组默认选项配置，按顺序，可留空
+    - default:
+         #表单项标题
+        title: 健康状况
+        #表单项默认值
+        value: 健康，7日内未进行过核酸检测
+    - default:
+        title: 14天内是否有中高风险地区所在城市旅居史（如有，请选择其它，并具体填写何时旅居过何中高风险地区所在城市，参考格式：7月25日，到南京市访友，逗留2小时）
+        value: 否
+    - default: 
+        title: 14天内是否有中高风险地区旅居史（如有，请选择其它，并具体填写何时旅居过何中高风险地区，参考格式：7月25日，到南京江宁区**街道**小区办事，逗留10分钟）
+        value: 否
+    - default: 
+        title: 是否与确诊病例、无症状感染者乘坐同次航班或列车（如有，请选择其它，并填写具体车次、航班号及时间，参考格式：G1201，8月2日）
+        value: 否
+    - default:
+        title: 隔离情况
+        value: 未隔离
